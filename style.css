@@ -1,0 +1,181 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.main-content
+{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    /* grid-template-rows: 20% 80%; */
+    grid-template-columns: 300px 700px;
+}
+
+.main-content .left-section
+{
+    grid-column: span 1;
+    background: #056;
+
+}
+
+.main-content .right-section
+{
+    grid-column: span 1 / span 2;
+    background-color: #fff6a4;
+}
+
+.left-content
+{
+    padding: 1rem;
+}
+
+.left-content .profile-details img
+{
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 150px;
+    border-radius: 30%;
+    border: 5px solid #fff;
+}
+
+.left-content .profile-details h2
+{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    color: #fff;
+}
+.left-content .profile-details h4
+{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(33, 177, 177);
+    padding: 0 0 0.5rem 0;
+}
+.left-content .profile-details p
+{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+.left-content .contact-item
+{
+    text-align: center;
+}
+.left-content .contact-item ul
+{
+    display: inline-flex;
+    text-align: center;
+}
+
+.left-content .contact-item .social li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    color: #fff;
+}
+.left-content .contact-item .social li a
+{
+    color: #fff;
+}
+
+.left-content .contact-item ul.optional_contact
+{
+    display: block;
+    text-align: start;
+    margin: 20px 0px 0px 20px;
+}
+.left-content .contact-item ul.optional_contact li
+{
+   list-style: none;
+   color: #fff;
+   padding: 15px 15px;
+   /* margin: 10px; */
+
+}
+.left-content .contact-item ul.optional_contact li i
+{
+    padding:0px 10px 0px 0px ;
+
+}
+
+.left-content .skills
+{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    color: #fff;
+}
+
+.left-content .skill-item
+{
+    margin: 15px 0px;
+}
+
+.left-content .skill-item .skill-name
+{
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom:0.5rem;
+    color: #fff;
+}
+.left-content .skill-item .skill-progress .progress-bar
+{
+    border: 1px solid #fff;
+    height: 4px;
+    /* border-radius: 100%;. */
+    background-color: #fff;
+}
+
+.main-content .right-section .right-main-content
+{
+    padding: 2rem 3rem;
+}
+.main-content .right-section .right-main-content .right-title
+{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width:630px) {
+
+    .main-content
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width:673px) {
+
+    .main-content
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
